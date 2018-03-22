@@ -1,0 +1,1849 @@
+package lic.premium_calculation_rules;
+//generated from Decision Table
+import com.lic.insurance.bff.model.policy.revivalquotation.RevivalMonthFactor;
+import com.lic.insurance.bff.model.policy.revivalquotation.RevivalLateFee;
+import java.math.BigDecimal;
+import java.util.Date;
+dialect "java"
+
+
+// rule values at A10, header at A5
+rule "MON_0"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 0)
+	then
+		$revmfac.setFactor(1);
+end
+
+// rule values at A10, header at A5
+rule "MON_1_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 1, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.00792);
+end
+
+// rule values at A11, header at A5
+rule "MON_2_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 2, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.01583);
+end
+
+// rule values at A12, header at A5
+rule "MON_3_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 3, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.02375);
+end
+
+// rule values at A13, header at A5
+rule "MON_4_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 4, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.03167);
+end
+
+// rule values at A14, header at A5
+rule "MON_5_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 5, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.03958);
+end
+
+// rule values at A15, header at A5
+rule "MON_6_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 6, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.0475);
+end
+
+// rule values at A16, header at A5
+rule "MON_7_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 7, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.0558);
+end
+
+// rule values at A17, header at A5
+rule "MON_8_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 8, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.06408);
+end
+
+// rule values at A18, header at A5
+rule "MON_9_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 9, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.07238);
+end
+
+// rule values at A19, header at A5
+rule "MON_10_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 10, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.08067);
+end
+
+// rule values at A20, header at A5
+rule "MON_11_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 11, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.08896);
+end
+
+// rule values at A21, header at A5
+rule "MON_12_INT_9.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 12, $revmfac.rateOfInterest == 9.5)
+	then
+		$revmfac.setFactor(1.09726);
+end
+
+// rule values at A22, header at A5
+rule "MON_13_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 13, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.08314);
+end
+
+// rule values at A23, header at A5
+rule "MON_14_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 14, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.08987);
+end
+
+// rule values at A24, header at A5
+rule "MON_15_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 15, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.09659);
+end
+
+// rule values at A25, header at A5
+rule "MON_16_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 16, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.10332);
+end
+
+// rule values at A26, header at A5
+rule "MON_17_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 17, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.11005);
+end
+
+// rule values at A27, header at A5
+rule "MON_18_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 18, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.11678);
+end
+
+// rule values at A28, header at A5
+rule "MON_19_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 19, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.12376);
+end
+
+// rule values at A29, header at A5
+rule "MON_20_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 20, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.13074);
+end
+
+// rule values at A30, header at A5
+rule "MON_21_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 21, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.13771);
+end
+
+// rule values at A31, header at A5
+rule "MON_22_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 22, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.14469);
+end
+
+// rule values at A32, header at A5
+rule "MON_23_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 23, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.15167);
+end
+
+// rule values at A33, header at A5
+rule "MON_24_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 24, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.15865);
+end
+
+// rule values at A34, header at A5
+rule "MON_25_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 25, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.1659);
+end
+
+// rule values at A35, header at A5
+rule "MON_26_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 26, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.17314);
+end
+
+// rule values at A36, header at A5
+rule "MON_27_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 27, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.18038);
+end
+
+// rule values at A37, header at A5
+rule "MON_28_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 28, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.18762);
+end
+
+// rule values at A38, header at A5
+rule "MON_29_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 29, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.19486);
+end
+
+// rule values at A39, header at A5
+rule "MON_30_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 30, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.2021);
+end
+
+// rule values at A40, header at A5
+rule "MON_31_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 31, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.2096200000000001);
+end
+
+// rule values at A41, header at A5
+rule "MON_32_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 32, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.21713);
+end
+
+// rule values at A42, header at A5
+rule "MON_33_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 33, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.22464);
+end
+
+// rule values at A43, header at A5
+rule "MON_34_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 34, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.23216);
+end
+
+// rule values at A44, header at A5
+rule "MON_35_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 35, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.23967);
+end
+
+// rule values at A45, header at A5
+rule "MON_36_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 36, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.24718);
+end
+
+// rule values at A46, header at A5
+rule "MON_37_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 37, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.25498);
+end
+
+// rule values at A47, header at A5
+rule "MON_38_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 38, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.26277);
+end
+
+// rule values at A48, header at A5
+rule "MON_39_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 39, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.27057);
+end
+
+// rule values at A49, header at A5
+rule "MON_40_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 40, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.27836);
+end
+
+// rule values at A50, header at A5
+rule "MON_41_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 41, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.28616);
+end
+
+// rule values at A51, header at A5
+rule "MON_42_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 42, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.2939500000000002);
+end
+
+// rule values at A52, header at A5
+rule "MON_43_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 43, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.30204);
+end
+
+// rule values at A53, header at A5
+rule "MON_44_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 44, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.31013);
+end
+
+// rule values at A54, header at A5
+rule "MON_45_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 45, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.31821);
+end
+
+// rule values at A55, header at A5
+rule "MON_46_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 46, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.3263);
+end
+
+// rule values at A56, header at A5
+rule "MON_47_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 47, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.33439);
+end
+
+// rule values at A57, header at A5
+rule "MON_48_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 48, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.3424800000000001);
+end
+
+// rule values at A58, header at A5
+rule "MON_49_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 49, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.35087);
+end
+
+// rule values at A59, header at A5
+rule "MON_50_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 50, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.35926);
+end
+
+// rule values at A60, header at A5
+rule "MON_51_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 51, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.36765);
+end
+
+// rule values at A61, header at A5
+rule "MON_52_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 52, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.3760400000000002);
+end
+
+// rule values at A62, header at A5
+rule "MON_53_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 53, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.38443);
+end
+
+// rule values at A63, header at A5
+rule "MON_54_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 54, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.39282);
+end
+
+// rule values at A64, header at A5
+rule "MON_55_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 55, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.40152);
+end
+
+// rule values at A65, header at A5
+rule "MON_56_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 56, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.41023);
+end
+
+// rule values at A66, header at A5
+rule "MON_57_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 57, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.41893);
+end
+
+// rule values at A67, header at A5
+rule "MON_58_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 58, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.42764);
+end
+
+// rule values at A68, header at A5
+rule "MON_59_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 59, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.43634);
+end
+
+// rule values at A69, header at A5
+rule "MON_60_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 60, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.4450500000000002);
+end
+
+// rule values at A70, header at A5
+rule "MON_61_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 61, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.45408);
+end
+
+// rule values at A71, header at A5
+rule "MON_62_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 62, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.46311);
+end
+
+// rule values at A72, header at A5
+rule "MON_63_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 63, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.47214);
+end
+
+// rule values at A73, header at A5
+rule "MON_64_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 64, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.4811800000000002);
+end
+
+// rule values at A74, header at A5
+rule "MON_65_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 65, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.49021);
+end
+
+// rule values at A75, header at A5
+rule "MON_66_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 66, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.49924);
+end
+
+// rule values at A76, header at A5
+rule "MON_67_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 67, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.50861);
+end
+
+// rule values at A77, header at A5
+rule "MON_68_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 68, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.51798);
+end
+
+// rule values at A78, header at A5
+rule "MON_69_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 69, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.5273500000000002);
+end
+
+// rule values at A79, header at A5
+rule "MON_70_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 70, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.53672);
+end
+
+// rule values at A80, header at A5
+rule "MON_71_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 71, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.54609);
+end
+
+// rule values at A81, header at A5
+rule "MON_72_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 72, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.55546);
+end
+
+// rule values at A82, header at A5
+rule "MON_13_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 13, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.08885);
+end
+
+// rule values at A83, header at A5
+rule "MON_14_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 14, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.09607);
+end
+
+// rule values at A84, header at A5
+rule "MON_15_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 15, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.10328);
+end
+
+// rule values at A85, header at A5
+rule "MON_16_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 16, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.1105);
+end
+
+// rule values at A86, header at A5
+rule "MON_17_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 17, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.11771);
+end
+
+// rule values at A87, header at A5
+rule "MON_18_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 18, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.12493);
+end
+
+// rule values at A88, header at A5
+rule "MON_19_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 19, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.13243);
+end
+
+// rule values at A89, header at A5
+rule "MON_20_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 20, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.13993);
+end
+
+// rule values at A90, header at A5
+rule "MON_21_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 21, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.14744);
+end
+
+// rule values at A91, header at A5
+rule "MON_22_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 22, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.15494);
+end
+
+// rule values at A92, header at A5
+rule "MON_23_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 23, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.16244);
+end
+
+// rule values at A93, header at A5
+rule "MON_24_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 24, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.16995);
+end
+
+// rule values at A94, header at A5
+rule "MON_25_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 25, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.17775);
+end
+
+// rule values at A95, header at A5
+rule "MON_26_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 26, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.18555);
+end
+
+// rule values at A96, header at A5
+rule "MON_27_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 27, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.19336);
+end
+
+// rule values at A97, header at A5
+rule "MON_28_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 28, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.20116);
+end
+
+// rule values at A98, header at A5
+rule "MON_29_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 29, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.20896);
+end
+
+// rule values at A99, header at A5
+rule "MON_30_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 30, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.21677);
+end
+
+// rule values at A100, header at A5
+rule "MON_31_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 31, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.22488);
+end
+
+// rule values at A101, header at A5
+rule "MON_32_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 32, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.233);
+end
+
+// rule values at A102, header at A5
+rule "MON_33_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 33, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.24112);
+end
+
+// rule values at A103, header at A5
+rule "MON_34_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 34, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.24923);
+end
+
+// rule values at A104, header at A5
+rule "MON_35_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 35, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.25735);
+end
+
+// rule values at A105, header at A5
+rule "MON_36_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 36, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.26546);
+end
+
+// rule values at A106, header at A5
+rule "MON_37_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 37, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.2739);
+end
+
+// rule values at A107, header at A5
+rule "MON_38_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 38, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.28234);
+end
+
+// rule values at A108, header at A5
+rule "MON_39_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 39, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.29079);
+end
+
+// rule values at A109, header at A5
+rule "MON_40_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 40, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.29923);
+end
+
+// rule values at A110, header at A5
+rule "MON_41_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 41, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.3076699999999999);
+end
+
+// rule values at A111, header at A5
+rule "MON_42_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 42, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.3161100000000001);
+end
+
+// rule values at A112, header at A5
+rule "MON_43_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 43, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.32489);
+end
+
+// rule values at A113, header at A5
+rule "MON_44_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 44, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.33366);
+end
+
+// rule values at A114, header at A5
+rule "MON_45_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 45, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.34244);
+end
+
+// rule values at A115, header at A5
+rule "MON_46_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 46, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.35122);
+end
+
+// rule values at A116, header at A5
+rule "MON_47_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 47, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.36);
+end
+
+// rule values at A117, header at A5
+rule "MON_48_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 48, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.36878);
+end
+
+// rule values at A118, header at A5
+rule "MON_49_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 49, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.37791);
+end
+
+// rule values at A119, header at A5
+rule "MON_50_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 50, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.38704);
+end
+
+// rule values at A120, header at A5
+rule "MON_51_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 51, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.3961700000000001);
+end
+
+// rule values at A121, header at A5
+rule "MON_52_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 52, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.4053);
+end
+
+// rule values at A122, header at A5
+rule "MON_53_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 53, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.41443);
+end
+
+// rule values at A123, header at A5
+rule "MON_54_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 54, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.4235600000000002);
+end
+
+// rule values at A124, header at A5
+rule "MON_55_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 55, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.4330500000000002);
+end
+
+// rule values at A125, header at A5
+rule "MON_56_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 56, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.44255);
+end
+
+// rule values at A126, header at A5
+rule "MON_57_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 57, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.45204);
+end
+
+// rule values at A127, header at A5
+rule "MON_58_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 58, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.46154);
+end
+
+// rule values at A128, header at A5
+rule "MON_59_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 59, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.47103);
+end
+
+// rule values at A129, header at A5
+rule "MON_60_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 60, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.48053);
+end
+
+// rule values at A130, header at A5
+rule "MON_61_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 61, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.4904);
+end
+
+// rule values at A131, header at A5
+rule "MON_62_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 62, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.50028);
+end
+
+// rule values at A132, header at A5
+rule "MON_63_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 63, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.5101499999999999);
+end
+
+// rule values at A133, header at A5
+rule "MON_64_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 64, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.52003);
+end
+
+// rule values at A134, header at A5
+rule "MON_65_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 65, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.5299);
+end
+
+// rule values at A135, header at A5
+rule "MON_66_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 66, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.53978);
+end
+
+// rule values at A136, header at A5
+rule "MON_67_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 67, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.5500500000000001);
+end
+
+// rule values at A137, header at A5
+rule "MON_68_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 68, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.56032);
+end
+
+// rule values at A138, header at A5
+rule "MON_69_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 69, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.5705900000000002);
+end
+
+// rule values at A139, header at A5
+rule "MON_70_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 70, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.58086);
+end
+
+// rule values at A140, header at A5
+rule "MON_71_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 71, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.5911300000000002);
+end
+
+// rule values at A141, header at A5
+rule "MON_72_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 72, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.6014);
+end
+
+// rule values at A142, header at A5
+rule "MON_13_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 13, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.06627);
+end
+
+// rule values at A143, header at A5
+rule "MON_14_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 14, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.07158);
+end
+
+// rule values at A144, header at A5
+rule "MON_15_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 15, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.07689);
+end
+
+// rule values at A145, header at A5
+rule "MON_16_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 16, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.0822);
+end
+
+// rule values at A146, header at A5
+rule "MON_17_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 17, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.08751);
+end
+
+// rule values at A147, header at A5
+rule "MON_18_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 18, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.0928200000000001);
+end
+
+// rule values at A148, header at A5
+rule "MON_19_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 19, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.09829);
+end
+
+// rule values at A149, header at A5
+rule "MON_20_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 20, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.10376);
+end
+
+// rule values at A150, header at A5
+rule "MON_21_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 21, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.10923);
+end
+
+// rule values at A151, header at A5
+rule "MON_22_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 22, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.1147);
+end
+
+// rule values at A152, header at A5
+rule "MON_23_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 23, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.12016);
+end
+
+// rule values at A153, header at A5
+rule "MON_24_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 24, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.12564);
+end
+
+// rule values at A154, header at A5
+rule "MON_25_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 25, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.13127);
+end
+
+// rule values at A155, header at A5
+rule "MON_26_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 26, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.13691);
+end
+
+// rule values at A156, header at A5
+rule "MON_27_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 27, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.14254);
+end
+
+// rule values at A157, header at A5
+rule "MON_28_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 28, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.14818);
+end
+
+// rule values at A158, header at A5
+rule "MON_29_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 29, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.1538);
+end
+
+// rule values at A159, header at A5
+rule "MON_30_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 30, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.15944);
+end
+
+// rule values at A160, header at A5
+rule "MON_31_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 31, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.16524);
+end
+
+// rule values at A161, header at A5
+rule "MON_32_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 32, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.17105);
+end
+
+// rule values at A162, header at A5
+rule "MON_33_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 33, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.17685);
+end
+
+// rule values at A163, header at A5
+rule "MON_34_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 34, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.18265);
+end
+
+// rule values at A164, header at A5
+rule "MON_35_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 35, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.18845);
+end
+
+// rule values at A165, header at A5
+rule "MON_36_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 36, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.19426);
+end
+
+// rule values at A166, header at A5
+rule "MON_37_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 37, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.20023);
+end
+
+// rule values at A167, header at A5
+rule "MON_38_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 38, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.20622);
+end
+
+// rule values at A168, header at A5
+rule "MON_39_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 39, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.21219);
+end
+
+// rule values at A169, header at A5
+rule "MON_40_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 40, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.21817);
+end
+
+// rule values at A170, header at A5
+rule "MON_41_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 41, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.22414);
+end
+
+// rule values at A171, header at A5
+rule "MON_42_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 42, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.23012);
+end
+
+// rule values at A172, header at A5
+rule "MON_43_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 43, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.23628);
+end
+
+// rule values at A173, header at A5
+rule "MON_44_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 44, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.24244);
+end
+
+// rule values at A174, header at A5
+rule "MON_45_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 45, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.24859);
+end
+
+// rule values at A175, header at A5
+rule "MON_46_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 46, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.25475);
+end
+
+// rule values at A176, header at A5
+rule "MON_47_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 47, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.2609);
+end
+
+// rule values at A177, header at A5
+rule "MON_48_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 48, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.26707);
+end
+
+// rule values at A178, header at A5
+rule "MON_49_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 49, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.2734);
+end
+
+// rule values at A179, header at A5
+rule "MON_50_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 50, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.27975);
+end
+
+// rule values at A180, header at A5
+rule "MON_51_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 51, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.2860800000000001);
+end
+
+// rule values at A181, header at A5
+rule "MON_52_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 52, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.29243);
+end
+
+// rule values at A182, header at A5
+rule "MON_53_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 53, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.29877);
+end
+
+// rule values at A183, header at A5
+rule "MON_54_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 54, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.30512);
+end
+
+// rule values at A184, header at A5
+rule "MON_55_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 55, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.3116400000000001);
+end
+
+// rule values at A185, header at A5
+rule "MON_56_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 56, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.31818);
+end
+
+// rule values at A186, header at A5
+rule "MON_57_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 57, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.32471);
+end
+
+// rule values at A187, header at A5
+rule "MON_58_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 58, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.33124);
+end
+
+// rule values at A188, header at A5
+rule "MON_59_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 59, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.33777);
+end
+
+// rule values at A189, header at A5
+rule "MON_60_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 60, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.3443100000000001);
+end
+
+// rule values at A190, header at A5
+rule "MON_61_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 61, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.35103);
+end
+
+// rule values at A191, header at A5
+rule "MON_62_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 62, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.35776);
+end
+
+// rule values at A192, header at A5
+rule "MON_63_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 63, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.36449);
+end
+
+// rule values at A193, header at A5
+rule "MON_64_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 64, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.37122);
+end
+
+// rule values at A194, header at A5
+rule "MON_65_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 65, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.3779400000000002);
+end
+
+// rule values at A195, header at A5
+rule "MON_66_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 66, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.38468);
+end
+
+// rule values at A196, header at A5
+rule "MON_67_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 67, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.3916);
+end
+
+// rule values at A197, header at A5
+rule "MON_68_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 68, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.3985400000000001);
+end
+
+// rule values at A198, header at A5
+rule "MON_69_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 69, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.4054600000000002);
+end
+
+// rule values at A199, header at A5
+rule "MON_70_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 70, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.4124);
+end
+
+// rule values at A200, header at A5
+rule "MON_71_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 71, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.41932);
+end
+
+// rule values at A201, header at A5
+rule "MON_72_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 72, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.42626);
+end
+
+// rule values at A202, header at A5
+rule "MON_1_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 1, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.00625);
+end
+
+// rule values at A203, header at A5
+rule "MON_2_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 2, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.0125);
+end
+
+// rule values at A204, header at A5
+rule "MON_3_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 3, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.01875);
+end
+
+// rule values at A205, header at A5
+rule "MON_4_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 4, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.025);
+end
+
+// rule values at A206, header at A5
+rule "MON_5_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 5, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.03125);
+end
+
+// rule values at A207, header at A5
+rule "MON_6_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 6, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.0375);
+end
+
+// rule values at A208, header at A5
+rule "MON_7_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 7, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.044);
+end
+
+// rule values at A209, header at A5
+rule "MON_8_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 8, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.05047);
+end
+
+// rule values at A210, header at A5
+rule "MON_9_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 9, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.05695);
+end
+
+// rule values at A211, header at A5
+rule "MON_10_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 10, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.06344);
+end
+
+// rule values at A212, header at A5
+rule "MON_11_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 11, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.06992);
+end
+
+// rule values at A213, header at A5
+rule "MON_12_INT_7.5"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 12, $revmfac.rateOfInterest == 7.5)
+	then
+		$revmfac.setFactor(1.07641);
+end
+
+// rule values at A214, header at A5
+rule "MON_1_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 1, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.00667);
+end
+
+// rule values at A215, header at A5
+rule "MON_2_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 2, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.01334);
+end
+
+// rule values at A216, header at A5
+rule "MON_3_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 3, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.02001);
+end
+
+// rule values at A217, header at A5
+rule "MON_4_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 4, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.02668);
+end
+
+// rule values at A218, header at A5
+rule "MON_5_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 5, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.03335);
+end
+
+// rule values at A219, header at A5
+rule "MON_6_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 6, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.04002);
+end
+
+// rule values at A220, header at A5
+rule "MON_7_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 7, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.04696);
+end
+
+// rule values at A221, header at A5
+rule "MON_8_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 8, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.05389);
+end
+
+// rule values at A222, header at A5
+rule "MON_9_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 9, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.06083);
+end
+
+// rule values at A223, header at A5
+rule "MON_10_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 10, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.06777);
+end
+
+// rule values at A224, header at A5
+rule "MON_11_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 11, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.0747);
+end
+
+// rule values at A225, header at A5
+rule "MON_12_INT_8"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 12, $revmfac.rateOfInterest == 8)
+	then
+		$revmfac.setFactor(1.08164);
+end
+
+// rule values at A226, header at A5
+rule "MON_1_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 1, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.005);
+end
+
+// rule values at A227, header at A5
+rule "MON_2_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 2, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.01001);
+end
+
+// rule values at A228, header at A5
+rule "MON_3_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 3, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.01501);
+end
+
+// rule values at A229, header at A5
+rule "MON_4_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 4, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.02002);
+end
+
+// rule values at A230, header at A5
+rule "MON_5_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 5, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.02502);
+end
+
+// rule values at A231, header at A5
+rule "MON_6_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 6, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.03003);
+end
+
+// rule values at A232, header at A5
+rule "MON_7_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 7, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.03518);
+end
+
+// rule values at A233, header at A5
+rule "MON_8_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 8, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.04033);
+end
+
+// rule values at A234, header at A5
+rule "MON_9_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 9, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.04549);
+end
+
+// rule values at A235, header at A5
+rule "MON_10_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 10, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.05064);
+end
+
+// rule values at A236, header at A5
+rule "MON_11_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 11, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.0558);
+end
+
+// rule values at A237, header at A5
+rule "MON_12_INT_6"
+	when
+		$revmfac:RevivalMonthFactor($revmfac.month == 12, $revmfac.rateOfInterest == 6)
+	then
+		$revmfac.setFactor(1.06096);
+end
+
+
+rule "call1"
+when
+
+then
+    drools.setFocus("get-revival-rates");
+end
+

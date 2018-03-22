@@ -1,0 +1,101 @@
+package lic.premium_calculations;
+
+import com.lic.insurance.bff.model.policy.SpotRevivalRq;
+import com.ipe.revival.bean.RevivalInBean;
+import com.ipe.revival.bean.RevivalOutBean;
+import com.ipe.revival.process.single.OnlineRevival;
+import java.util.List;
+import java.util.ArrayList;
+import java.math.BigDecimal;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+
+function SpotRevivalRq calculateSpotRevival(SpotRevivalRq spotRevivalRq)
+{
+     List<RevivalInBean>  revivalInput  =  new ArrayList<RevivalInBean>();
+     List<RevivalOutBean> revivalOutput =  new ArrayList<RevivalOutBean>();
+       
+
+        RevivalInBean  inBean  = new RevivalInBean();
+ 
+        inBean.setPolicyNumber(spotRevivalRq.getPolicyNumber());
+        inBean.setCommencement(spotRevivalRq.getCommencement());
+        inBean.setDateOfCalc(spotRevivalRq.getDateOfCalc());
+        inBean.setDateOfBirth(spotRevivalRq.getDateOfBirth());
+        inBean.setDateOfBirth2ndlife(spotRevivalRq.getDateOfBirth2ndlife());
+        inBean.setPlanNum(spotRevivalRq.getPlanNum());
+        inBean.setInstPremium(spotRevivalRq.getInstPremium());
+        inBean.setSumAssured(spotRevivalRq.getSumAssured());
+        inBean.setFupyyyymm(spotRevivalRq.getFup());
+        inBean.setPmo02Mode(spotRevivalRq.getPmo02Mode());
+        inBean.setPolicyTerm(spotRevivalRq.getPolicyTerm());
+        inBean.setPayingTerm(spotRevivalRq.getPayingTerm());
+        inBean.setAccumTerm(spotRevivalRq.getAccumTerm());
+        inBean.setPolicyStatus(spotRevivalRq.getPolicyStatus());
+        inBean.setSerbranch(spotRevivalRq.getSerbranch());
+        inBean.setAltChnlId(spotRevivalRq.getAltChnlId());
+        inBean.setAgeProofCode(spotRevivalRq.getAgeProofCode());
+        inBean.setNextPremChange(spotRevivalRq.getNextPremChange());
+        inBean.setLastPremChange(spotRevivalRq.getLastPremChange());
+        inBean.setStsChangeDate(spotRevivalRq.getStsChangeDate());
+        inBean.setPmGaps(spotRevivalRq.getPmGaps());
+        inBean.setPmInstRevFlag(spotRevivalRq.getPmInstRevFlag());
+        inBean.setPmCampaignRevival(spotRevivalRq.getPmCampaignRevival());
+        inBean.setMedicalcode(spotRevivalRq.getMedicalcode());
+        inBean.setExtraspresent(spotRevivalRq.getExtraspresent());
+        inBean.setRiderspresent(spotRevivalRq.getRiderspresent());
+        inBean.setNriFlag(spotRevivalRq.getNriFlag());
+        inBean.setCountryCode(spotRevivalRq.getCountryCode());
+        inBean.setChartCode(spotRevivalRq.getChartCode());
+        inBean.setCdaCharges(spotRevivalRq.getCDACharges());
+        
+        revivalInput.add(inBean);
+ 
+ 
+ 
+        OnlineRevival onRev = new OnlineRevival();
+        
+        if( onRev.getRevivalData(revivalInput)){
+           revivalOutput = onRev.getRevivalOutput(); 
+       
+ 
+          for( int i = 0 ; i < revivalOutput.size(); i++){
+            /*System.out.println("PolicyNumber:::"+revivalOutput.get(i).getPolicyNumber());
+            System.out.println("FromDue::::"+revivalOutput.get(i).getFromDue());
+            System.out.println("UptoDue::::"+revivalOutput.get(i).getUptoDue());
+            System.out.println("NoofDues::::"+revivalOutput.get(i).getNoofDues());
+ 
+            System.out.println("TotalPremium:::"+revivalOutput.get(i).getTotalPremium());
+            System.out.println("NetLateFee:::"+revivalOutput.get(i).getNetLateFee());
+            System.out.println("GSTonPremium:::"+revivalOutput.get(i).getGSTonPremium());
+            System.out.println("GSTonLateFee:::"+revivalOutput.get(i).getGSTonLateFee());
+            System.out.println("GSTonCDACharges:::"+revivalOutput.get(i).getGSTonCDACharges());
+            System.out.println("isSpotRevivalAllowed::::"+revivalOutput.get(i).isSpotRevivalAllowed());*/
+            
+            spotRevivalRq.setFromDue(revivalOutput.get(i).getFromDue());
+            spotRevivalRq.setUptoDue(revivalOutput.get(i).getUptoDue());
+            spotRevivalRq.setNoofDues(revivalOutput.get(i).getNoofDues());
+            spotRevivalRq.setTotalPremium(revivalOutput.get(i).getTotalPremium());
+            spotRevivalRq.setNetLateFee(revivalOutput.get(i).getNetLateFee());
+            spotRevivalRq.setgSTonPremium(revivalOutput.get(i).getGSTonPremium());
+            spotRevivalRq.setgSTonLateFee(revivalOutput.get(i).getGSTonLateFee());
+            spotRevivalRq.setgSTonCDACharges(revivalOutput.get(i).getGSTonCDACharges());
+            spotRevivalRq.setIsSpotRevivalAllowed(revivalOutput.get(i).isSpotRevivalAllowed());
+            
+          }	
+}
+return spotRevivalRq;
+}
+
+
+rule "calculate spotRevival"
+	when 
+		spotRevivalRq:SpotRevivalRq()
+	
+then 
+
+spotRevivalRq=calculateSpotRevival(spotRevivalRq);
+	  
+end
+
+

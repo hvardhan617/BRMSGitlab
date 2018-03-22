@@ -1,0 +1,4623 @@
+package lic.premium_calculation_rules;
+
+//generated from Decision Table
+import com.lic.insurance.bff.model.policy.revivalquotation.RevivalRates;
+import java.math.BigDecimal;
+import java.util.Date;
+dialect "java"
+
+rule "DUE_1_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A11, header at A5
+rule "DUE_2_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(2.076);
+end
+
+// rule values at A12, header at A5
+rule "DUE_3_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(3.235);
+end
+
+// rule values at A13, header at A5
+rule "DUE_4_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(4.482);
+end
+
+// rule values at A14, header at A5
+rule "DUE_5_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(5.825);
+end
+
+// rule values at A15, header at A5
+rule "DUE_6_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(7.27);
+end
+
+// rule values at A16, header at A5
+rule "DUE_7_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(8.825);
+end
+
+// rule values at A17, header at A5
+rule "DUE_8_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(10.5);
+end
+
+// rule values at A18, header at A5
+rule "DUE_9_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(12.302);
+end
+
+// rule values at A19, header at A5
+rule "DUE_10_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(14.242);
+end
+
+// rule values at A20, header at A5
+rule "DUE_11_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(16.33);
+end
+
+// rule values at A21, header at A5
+rule "DUE_12_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(18.578);
+end
+
+// rule values at A22, header at A5
+rule "DUE_13_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 13, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(20.997);
+end
+
+// rule values at A23, header at A5
+rule "DUE_14_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 14, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(23.601);
+end
+
+// rule values at A24, header at A5
+rule "DUE_15_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 15, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(26.405);
+end
+
+// rule values at A25, header at A5
+rule "DUE_16_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 16, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(29.442);
+end
+
+// rule values at A26, header at A5
+rule "DUE_17_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 17, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(32.67);
+end
+
+// rule values at A27, header at A5
+rule "DUE_18_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 18, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(36.166);
+end
+
+// rule values at A28, header at A5
+rule "DUE_19_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 19, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(39.93);
+end
+
+// rule values at A29, header at A5
+rule "DUE_20_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 20, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(43.98);
+end
+
+// rule values at A30, header at A5
+rule "DUE_21_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 21, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(48.341);
+end
+
+// rule values at A31, header at A5
+rule "DUE_22_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 22, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(53.034);
+end
+
+// rule values at A32, header at A5
+rule "DUE_23_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 23, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(58.086);
+end
+
+// rule values at A33, header at A5
+rule "DUE_24_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 24, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(63.525);
+end
+
+// rule values at A34, header at A5
+rule "DUE_25_MODE_12_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 25, $revrates.roi== 7.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(69.378);
+end
+
+// rule values at A35, header at A5
+rule "DUE_1_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A36, header at A5
+rule "DUE_2_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(2.038);
+end
+
+// rule values at A37, header at A5
+rule "DUE_3_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(3.114);
+end
+
+// rule values at A38, header at A5
+rule "DUE_4_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(4.231);
+end
+
+// rule values at A39, header at A5
+rule "DUE_5_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(5.389);
+end
+
+// rule values at A40, header at A5
+rule "DUE_6_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(6.591);
+end
+
+// rule values at A41, header at A5
+rule "DUE_7_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(7.839);
+end
+
+// rule values at A42, header at A5
+rule "DUE_8_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(9.133);
+end
+
+// rule values at A43, header at A5
+rule "DUE_9_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(10.475);
+end
+
+// rule values at A44, header at A5
+rule "DUE_10_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(11.868);
+end
+
+// rule values at A45, header at A5
+rule "DUE_11_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(13.313);
+end
+
+// rule values at A46, header at A5
+rule "DUE_12_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(14.812);
+end
+
+// rule values at A47, header at A5
+rule "DUE_13_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 13, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(16.368);
+end
+
+// rule values at A48, header at A5
+rule "DUE_14_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 14, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(17.981);
+end
+
+// rule values at A49, header at A5
+rule "DUE_15_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 15, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(19.656);
+end
+
+// rule values at A50, header at A5
+rule "DUE_16_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 16, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(21.393);
+end
+
+// rule values at A51, header at A5
+rule "DUE_17_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 17, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(23.195);
+end
+
+// rule values at A52, header at A5
+rule "DUE_18_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 18, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(25.065);
+end
+
+// rule values at A53, header at A5
+rule "DUE_19_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 19, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(27.005);
+end
+
+// rule values at A54, header at A5
+rule "DUE_20_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 20, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(29.017);
+end
+
+// rule values at A55, header at A5
+rule "DUE_21_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 21, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(31.106);
+end
+
+// rule values at A56, header at A5
+rule "DUE_22_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 22, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(33.272);
+end
+
+// rule values at A57, header at A5
+rule "DUE_23_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 23, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(35.52);
+end
+
+// rule values at A58, header at A5
+rule "DUE_24_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 24, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(37.852);
+end
+
+// rule values at A59, header at A5
+rule "DUE_25_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 25, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(40.271);
+end
+
+// rule values at A60, header at A5
+rule "DUE_26_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 26, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(42.781);
+end
+
+// rule values at A61, header at A5
+rule "DUE_27_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 27, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(45.386);
+end
+
+// rule values at A62, header at A5
+rule "DUE_28_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 28, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(48.088);
+end
+
+// rule values at A63, header at A5
+rule "DUE_29_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 29, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(50.891);
+end
+
+// rule values at A64, header at A5
+rule "DUE_30_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 30, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(53.799);
+end
+
+// rule values at A65, header at A5
+rule "DUE_31_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 31, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(56.817);
+end
+
+// rule values at A66, header at A5
+rule "DUE_32_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 32, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(59.947);
+end
+
+// rule values at A67, header at A5
+rule "DUE_33_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 33, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(63.195);
+end
+
+// rule values at A68, header at A5
+rule "DUE_34_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 34, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(66.565);
+end
+
+// rule values at A69, header at A5
+rule "DUE_35_MODE_6_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 35, $revrates.roi== 7.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(70.061);
+end
+
+// rule values at A70, header at A5
+rule "DUE_1_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A71, header at A5
+rule "DUE_2_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(2.019);
+end
+
+// rule values at A72, header at A5
+rule "DUE_3_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(3.056);
+end
+
+// rule values at A73, header at A5
+rule "DUE_4_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(4.113);
+end
+
+// rule values at A74, header at A5
+rule "DUE_5_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(5.189);
+end
+
+// rule values at A75, header at A5
+rule "DUE_6_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(6.286);
+end
+
+// rule values at A76, header at A5
+rule "DUE_7_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(7.402);
+end
+
+// rule values at A77, header at A5
+rule "DUE_8_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(8.54);
+end
+
+// rule values at A78, header at A5
+rule "DUE_9_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(9.699);
+end
+
+// rule values at A79, header at A5
+rule "DUE_10_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(10.879);
+end
+
+// rule values at A80, header at A5
+rule "DUE_11_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(12.081);
+end
+
+// rule values at A81, header at A5
+rule "DUE_12_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(13.305);
+end
+
+// rule values at A82, header at A5
+rule "DUE_13_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 13, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(14.552);
+end
+
+// rule values at A83, header at A5
+rule "DUE_14_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 14, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(15.823);
+end
+
+// rule values at A84, header at A5
+rule "DUE_15_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 15, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(17.117);
+end
+
+// rule values at A85, header at A5
+rule "DUE_16_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 16, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(18.435);
+end
+
+// rule values at A86, header at A5
+rule "DUE_17_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 17, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(19.777);
+end
+
+// rule values at A87, header at A5
+rule "DUE_18_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 18, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(21.145);
+end
+
+// rule values at A88, header at A5
+rule "DUE_19_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 19, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(22.537);
+end
+
+// rule values at A89, header at A5
+rule "DUE_20_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 20, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(23.956);
+end
+
+// rule values at A90, header at A5
+rule "DUE_21_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 21, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(25.401);
+end
+
+// rule values at A91, header at A5
+rule "DUE_22_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 22, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(26.873);
+end
+
+// rule values at A92, header at A5
+rule "DUE_23_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 23, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(28.372);
+end
+
+// rule values at A93, header at A5
+rule "DUE_24_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 24, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(29.899);
+end
+
+// rule values at A94, header at A5
+rule "DUE_25_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 25, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(31.455);
+end
+
+// rule values at A95, header at A5
+rule "DUE_26_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 26, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(33.039);
+end
+
+// rule values at A96, header at A5
+rule "DUE_27_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 27, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(34.653);
+end
+
+// rule values at A97, header at A5
+rule "DUE_28_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 28, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(36.297);
+end
+
+// rule values at A98, header at A5
+rule "DUE_29_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 29, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(37.971);
+end
+
+// rule values at A99, header at A5
+rule "DUE_30_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 30, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(39.676);
+end
+
+// rule values at A100, header at A5
+rule "DUE_31_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 31, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(41.414);
+end
+
+// rule values at A101, header at A5
+rule "DUE_32_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 32, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(43.183);
+end
+
+// rule values at A102, header at A5
+rule "DUE_33_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 33, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(44.985);
+end
+
+// rule values at A103, header at A5
+rule "DUE_34_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 34, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(46.821);
+end
+
+// rule values at A104, header at A5
+rule "DUE_35_MODE_3_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 35, $revrates.roi== 7.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(48.691);
+end
+
+// rule values at A105, header at A5
+rule "DUE_1_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A106, header at A5
+rule "DUE_2_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(2.006);
+end
+
+// rule values at A107, header at A5
+rule "DUE_3_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(3.019);
+end
+
+// rule values at A108, header at A5
+rule "DUE_4_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(4.037);
+end
+
+// rule values at A109, header at A5
+rule "DUE_5_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(5.062);
+end
+
+// rule values at A110, header at A5
+rule "DUE_6_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(6.093);
+end
+
+// rule values at A111, header at A5
+rule "DUE_7_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(7.131);
+end
+
+// rule values at A112, header at A5
+rule "DUE_8_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(8.174);
+end
+
+// rule values at A113, header at A5
+rule "DUE_9_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(9.225);
+end
+
+// rule values at A114, header at A5
+rule "DUE_10_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(10.282);
+end
+
+// rule values at A115, header at A5
+rule "DUE_11_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(11.345);
+end
+
+// rule values at A116, header at A5
+rule "DUE_12_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(12.415);
+end
+
+// rule values at A117, header at A5
+rule "DUE_13_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 13, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(13.491);
+end
+
+// rule values at A118, header at A5
+rule "DUE_14_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 14, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(14.574);
+end
+
+// rule values at A119, header at A5
+rule "DUE_15_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 15, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(15.664);
+end
+
+// rule values at A120, header at A5
+rule "DUE_16_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 16, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(16.76);
+end
+
+// rule values at A121, header at A5
+rule "DUE_17_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 17, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(17.863);
+end
+
+// rule values at A122, header at A5
+rule "DUE_18_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 18, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(18.973);
+end
+
+// rule values at A123, header at A5
+rule "DUE_19_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 19, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(20.09);
+end
+
+// rule values at A124, header at A5
+rule "DUE_20_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 20, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(21.214);
+end
+
+// rule values at A125, header at A5
+rule "DUE_21_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 21, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(22.344);
+end
+
+// rule values at A126, header at A5
+rule "DUE_22_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 22, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(23.482);
+end
+
+// rule values at A127, header at A5
+rule "DUE_23_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 23, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(24.626);
+end
+
+// rule values at A128, header at A5
+rule "DUE_24_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 24, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(25.778);
+end
+
+// rule values at A129, header at A5
+rule "DUE_25_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 25, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(26.936);
+end
+
+// rule values at A130, header at A5
+rule "DUE_26_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 26, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(28.102);
+end
+
+// rule values at A131, header at A5
+rule "DUE_27_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 27, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(29.275);
+end
+
+// rule values at A132, header at A5
+rule "DUE_28_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 28, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(30.445);
+end
+
+// rule values at A133, header at A5
+rule "DUE_29_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 29, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(31.643);
+end
+
+// rule values at A134, header at A5
+rule "DUE_30_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 30, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(32.838);
+end
+
+// rule values at A135, header at A5
+rule "DUE_31_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 31, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(34.04);
+end
+
+// rule values at A136, header at A5
+rule "DUE_32_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 32, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(35.249);
+end
+
+// rule values at A137, header at A5
+rule "DUE_33_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 33, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(36.466);
+end
+
+// rule values at A138, header at A5
+rule "DUE_34_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 34, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(37.691);
+end
+
+// rule values at A139, header at A5
+rule "DUE_35_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 35, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(38.923);
+end
+
+// rule values at A140, header at A5
+rule "DUE_36_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 36, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(40.162);
+end
+
+// rule values at A141, header at A5
+rule "DUE_37_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 37, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(41.409);
+end
+
+// rule values at A142, header at A5
+rule "DUE_38_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 38, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(42.664);
+end
+
+// rule values at A143, header at A5
+rule "DUE_39_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 39, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(43.927);
+end
+
+// rule values at A144, header at A5
+rule "DUE_40_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 40, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(45.197);
+end
+
+// rule values at A145, header at A5
+rule "DUE_41_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 41, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(46.475);
+end
+
+// rule values at A146, header at A5
+rule "DUE_42_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 42, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(47.761);
+end
+
+// rule values at A147, header at A5
+rule "DUE_43_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 43, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(49.055);
+end
+
+// rule values at A148, header at A5
+rule "DUE_44_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 44, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(50.357);
+end
+
+// rule values at A149, header at A5
+rule "DUE_45_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 45, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(51.667);
+end
+
+// rule values at A150, header at A5
+rule "DUE_46_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 46, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(52.985);
+end
+
+// rule values at A151, header at A5
+rule "DUE_47_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 47, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(54.311);
+end
+
+// rule values at A152, header at A5
+rule "DUE_48_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 48, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(55.645);
+end
+
+// rule values at A153, header at A5
+rule "DUE_49_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 49, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(56.988);
+end
+
+// rule values at A154, header at A5
+rule "DUE_50_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 50, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(58.339);
+end
+
+// rule values at A155, header at A5
+rule "DUE_51_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 51, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(59.698);
+end
+
+// rule values at A156, header at A5
+rule "DUE_52_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 52, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(61.065);
+end
+
+// rule values at A157, header at A5
+rule "DUE_53_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 53, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(62.441);
+end
+
+// rule values at A158, header at A5
+rule "DUE_54_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 54, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(63.285);
+end
+
+// rule values at A159, header at A5
+rule "DUE_55_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 55, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(65.218);
+end
+
+// rule values at A160, header at A5
+rule "DUE_56_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 56, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(66.619);
+end
+
+// rule values at A161, header at A5
+rule "DUE_57_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 57, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(68.029);
+end
+
+// rule values at A162, header at A5
+rule "DUE_58_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 58, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(69.448);
+end
+
+// rule values at A163, header at A5
+rule "DUE_59_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 59, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(70.876);
+end
+
+// rule values at A164, header at A5
+rule "DUE_60_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 60, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(72.312);
+end
+
+// rule values at A165, header at A5
+rule "DUE_61_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 61, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(73.757);
+end
+
+// rule values at A166, header at A5
+rule "DUE_62_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 62, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(75.211);
+end
+
+// rule values at A167, header at A5
+rule "DUE_63_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 63, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(76.674);
+end
+
+// rule values at A168, header at A5
+rule "DUE_64_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 64, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(78.145);
+end
+
+// rule values at A169, header at A5
+rule "DUE_65_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 65, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(79.626);
+end
+
+// rule values at A170, header at A5
+rule "DUE_66_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 66, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(81.116);
+end
+
+// rule values at A171, header at A5
+rule "DUE_67_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 67, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(82.616);
+end
+
+// rule values at A172, header at A5
+rule "DUE_68_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 68, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(84.124);
+end
+
+// rule values at A173, header at A5
+rule "DUE_69_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 69, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(85.642);
+end
+
+// rule values at A174, header at A5
+rule "DUE_70_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 70, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(87.169);
+end
+
+// rule values at A175, header at A5
+rule "DUE_71_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 71, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(88.705);
+end
+
+// rule values at A176, header at A5
+rule "DUE_72_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 72, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(90.251);
+end
+
+// rule values at A177, header at A5
+rule "DUE_73_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 73, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(91.807);
+end
+
+// rule values at A178, header at A5
+rule "DUE_74_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 74, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(93.372);
+end
+
+// rule values at A179, header at A5
+rule "DUE_75_MODE_1_7.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 75, $revrates.roi== 7.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(94.947);
+end
+
+// rule values at A180, header at A5
+rule "DUE_1_MODE_12_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 8, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A181, header at A5
+rule "DUE_2_MODE_12_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 8, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(2.082);
+end
+
+// rule values at A182, header at A5
+rule "DUE_3_MODE_12_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 8, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(3.251);
+end
+
+// rule values at A183, header at A5
+rule "DUE_4_MODE_12_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 8, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(4.517);
+end
+
+// rule values at A184, header at A5
+rule "DUE_5_MODE_12_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 8, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(5.885);
+end
+
+// rule values at A185, header at A5
+rule "DUE_6_MODE_12_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 8, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(7.366);
+end
+
+// rule values at A186, header at A5
+rule "DUE_1_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A187, header at A5
+rule "DUE_2_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(2.04);
+end
+
+// rule values at A188, header at A5
+rule "DUE_3_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(3.122);
+end
+
+// rule values at A189, header at A5
+rule "DUE_4_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(4.246);
+end
+
+// rule values at A190, header at A5
+rule "DUE_5_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(5.416);
+end
+
+// rule values at A191, header at A5
+rule "DUE_6_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(6.633);
+end
+
+// rule values at A192, header at A5
+rule "DUE_7_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(7.898);
+end
+
+// rule values at A193, header at A5
+rule "DUE_8_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(9.214);
+end
+
+// rule values at A194, header at A5
+rule "DUE_9_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(10.583);
+end
+
+// rule values at A195, header at A5
+rule "DUE_10_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(12.006);
+end
+
+// rule values at A196, header at A5
+rule "DUE_11_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(13.486);
+end
+
+// rule values at A197, header at A5
+rule "DUE_12_MODE_6_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 8, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(15.026);
+end
+
+// rule values at A198, header at A5
+rule "DUE_1_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A199, header at A5
+rule "DUE_2_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(2.02);
+end
+
+// rule values at A200, header at A5
+rule "DUE_3_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(3.06);
+end
+
+// rule values at A201, header at A5
+rule "DUE_4_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(4.12);
+end
+
+// rule values at A202, header at A5
+rule "DUE_5_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(5.202);
+end
+
+// rule values at A203, header at A5
+rule "DUE_6_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(6.305);
+end
+
+// rule values at A204, header at A5
+rule "DUE_7_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(7.43);
+end
+
+// rule values at A205, header at A5
+rule "DUE_8_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(8.577);
+end
+
+// rule values at A206, header at A5
+rule "DUE_9_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(9.747);
+end
+
+// rule values at A207, header at A5
+rule "DUE_10_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(10.94);
+end
+
+// rule values at A208, header at A5
+rule "DUE_11_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(12.157);
+end
+
+// rule values at A209, header at A5
+rule "DUE_12_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(13.397);
+end
+
+// rule values at A210, header at A5
+rule "DUE_13_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 13, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(14.663);
+end
+
+// rule values at A211, header at A5
+rule "DUE_14_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 14, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(15.953);
+end
+
+// rule values at A212, header at A5
+rule "DUE_15_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 15, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(17.269);
+end
+
+// rule values at A213, header at A5
+rule "DUE_16_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 16, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(18.611);
+end
+
+// rule values at A214, header at A5
+rule "DUE_17_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 17, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(19.979);
+end
+
+// rule values at A215, header at A5
+rule "DUE_18_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 18, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(21.375);
+end
+
+// rule values at A216, header at A5
+rule "DUE_19_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 19, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(22.798000000000002);
+end
+
+// rule values at A217, header at A5
+rule "DUE_20_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 20, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(24.25);
+end
+
+// rule values at A218, header at A5
+rule "DUE_21_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 21, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(25.73);
+end
+
+// rule values at A219, header at A5
+rule "DUE_22_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 22, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(27.24);
+end
+
+// rule values at A220, header at A5
+rule "DUE_23_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 23, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(28.779);
+end
+
+// rule values at A221, header at A5
+rule "DUE_24_MODE_3_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 24, $revrates.roi== 8, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(30.349);
+end
+
+// rule values at A222, header at A5
+rule "DUE_1_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A223, header at A5
+rule "DUE_2_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(2.007);
+end
+
+// rule values at A224, header at A5
+rule "DUE_3_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(3.02);
+end
+
+// rule values at A225, header at A5
+rule "DUE_4_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(4.04);
+end
+
+// rule values at A226, header at A5
+rule "DUE_5_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(5.066);
+end
+
+// rule values at A227, header at A5
+rule "DUE_6_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(6.099);
+end
+
+// rule values at A228, header at A5
+rule "DUE_7_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(7.139);
+end
+
+// rule values at A229, header at A5
+rule "DUE_8_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(8.186);
+end
+
+// rule values at A230, header at A5
+rule "DUE_9_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(9.24);
+end
+
+// rule values at A231, header at A5
+rule "DUE_10_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(10.3);
+end
+
+// rule values at A232, header at A5
+rule "DUE_11_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(11.368);
+end
+
+// rule values at A233, header at A5
+rule "DUE_12_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(12.442);
+end
+
+// rule values at A234, header at A5
+rule "DUE_13_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 13, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(13.524000000000001);
+end
+
+// rule values at A235, header at A5
+rule "DUE_14_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 14, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(14.613);
+end
+
+// rule values at A236, header at A5
+rule "DUE_15_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 15, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(15.709);
+end
+
+// rule values at A237, header at A5
+rule "DUE_16_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 16, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(16.812);
+end
+
+// rule values at A238, header at A5
+rule "DUE_17_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 17, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(17.922);
+end
+
+// rule values at A239, header at A5
+rule "DUE_18_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 18, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(19.039);
+end
+
+// rule values at A240, header at A5
+rule "DUE_19_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 19, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(20.164);
+end
+
+// rule values at A241, header at A5
+rule "DUE_20_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 20, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(21.296);
+end
+
+// rule values at A242, header at A5
+rule "DUE_21_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 21, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(22.436);
+end
+
+// rule values at A243, header at A5
+rule "DUE_22_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 22, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(23.583);
+end
+
+// rule values at A244, header at A5
+rule "DUE_23_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 23, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(24.738);
+end
+
+// rule values at A245, header at A5
+rule "DUE_24_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 24, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(25.9);
+end
+
+// rule values at A246, header at A5
+rule "DUE_25_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 25, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(27.07);
+end
+
+// rule values at A247, header at A5
+rule "DUE_26_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 26, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(28.248);
+end
+
+// rule values at A248, header at A5
+rule "DUE_27_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 27, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(29.433);
+end
+
+// rule values at A249, header at A5
+rule "DUE_28_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 28, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(30.626);
+end
+
+// rule values at A250, header at A5
+rule "DUE_29_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 29, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(31.827);
+end
+
+// rule values at A251, header at A5
+rule "DUE_30_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 30, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(33.035);
+end
+
+// rule values at A252, header at A5
+rule "DUE_31_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 31, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(34.252);
+end
+
+// rule values at A253, header at A5
+rule "DUE_32_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 32, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(35.477);
+end
+
+// rule values at A254, header at A5
+rule "DUE_33_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 33, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(36.709);
+end
+
+// rule values at A255, header at A5
+rule "DUE_34_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 34, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(37.95);
+end
+
+// rule values at A256, header at A5
+rule "DUE_35_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 35, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(39.199);
+end
+
+// rule values at A257, header at A5
+rule "DUE_36_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 36, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(40.456);
+end
+
+// rule values at A258, header at A5
+rule "DUE_37_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 37, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(41.721);
+end
+
+// rule values at A259, header at A5
+rule "DUE_38_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 38, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(42.995);
+end
+
+// rule values at A260, header at A5
+rule "DUE_39_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 39, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(44.277);
+end
+
+// rule values at A261, header at A5
+rule "DUE_40_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 40, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(45.567);
+end
+
+// rule values at A262, header at A5
+rule "DUE_41_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 41, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(46.866);
+end
+
+// rule values at A263, header at A5
+rule "DUE_42_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 42, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(48.174);
+end
+
+// rule values at A264, header at A5
+rule "DUE_43_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 43, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(49.49);
+end
+
+// rule values at A265, header at A5
+rule "DUE_44_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 44, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(50.814);
+end
+
+// rule values at A266, header at A5
+rule "DUE_45_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 45, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(52.147);
+end
+
+// rule values at A267, header at A5
+rule "DUE_46_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 46, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(53.489);
+end
+
+// rule values at A268, header at A5
+rule "DUE_47_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 47, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(54.84);
+end
+
+// rule values at A269, header at A5
+rule "DUE_48_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 48, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(56.2);
+end
+
+// rule values at A270, header at A5
+rule "DUE_49_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 49, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(57.568);
+end
+
+// rule values at A271, header at A5
+rule "DUE_50_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 50, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(58.946);
+end
+
+// rule values at A272, header at A5
+rule "DUE_51_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 51, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(60.332);
+end
+
+// rule values at A273, header at A5
+rule "DUE_52_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 52, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(61.728);
+end
+
+// rule values at A274, header at A5
+rule "DUE_53_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 53, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(63.133);
+end
+
+// rule values at A275, header at A5
+rule "DUE_54_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 54, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(64.547);
+end
+
+// rule values at A276, header at A5
+rule "DUE_55_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 55, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(65.97);
+end
+
+// rule values at A277, header at A5
+rule "DUE_56_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 56, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(67.403);
+end
+
+// rule values at A278, header at A5
+rule "DUE_57_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 57, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(68.845);
+end
+
+// rule values at A279, header at A5
+rule "DUE_58_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 58, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(70.296);
+end
+
+// rule values at A280, header at A5
+rule "DUE_59_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 59, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(71.757);
+end
+
+// rule values at A281, header at A5
+rule "DUE_60_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 60, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(73.228);
+end
+
+// rule values at A282, header at A5
+rule "DUE_61_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 61, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(74.708);
+end
+
+// rule values at A283, header at A5
+rule "DUE_62_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 62, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(76.198);
+end
+
+// rule values at A284, header at A5
+rule "DUE_63_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 63, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(77.698);
+end
+
+// rule values at A285, header at A5
+rule "DUE_64_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 64, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(79.208);
+end
+
+// rule values at A286, header at A5
+rule "DUE_65_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 65, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(80.727);
+end
+
+// rule values at A287, header at A5
+rule "DUE_66_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 66, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(82.256);
+end
+
+// rule values at A288, header at A5
+rule "DUE_67_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 67, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(83.796);
+end
+
+// rule values at A289, header at A5
+rule "DUE_68_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 68, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(85.345);
+end
+
+// rule values at A290, header at A5
+rule "DUE_69_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 69, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(86.905);
+end
+
+// rule values at A291, header at A5
+rule "DUE_70_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 70, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(88.475);
+end
+
+// rule values at A292, header at A5
+rule "DUE_71_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 71, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(90.055);
+end
+
+// rule values at A293, header at A5
+rule "DUE_72_MODE_1_8"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 72, $revrates.roi== 8, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(91.646);
+end
+
+// rule values at A294, header at A5
+rule "DUE_1_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A295, header at A5
+rule "DUE_2_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(2.005);
+end
+
+// rule values at A296, header at A5
+rule "DUE_3_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(3.015);
+end
+
+// rule values at A297, header at A5
+rule "DUE_4_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(4.03);
+end
+
+// rule values at A298, header at A5
+rule "DUE_5_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(5.05);
+end
+
+// rule values at A299, header at A5
+rule "DUE_6_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(6.075);
+end
+
+// rule values at A300, header at A5
+rule "DUE_7_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(7.105);
+end
+
+// rule values at A301, header at A5
+rule "DUE_8_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(8.14);
+end
+
+// rule values at A302, header at A5
+rule "DUE_9_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(9.18);
+end
+
+// rule values at A303, header at A5
+rule "DUE_10_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(10.225);
+end
+
+// rule values at A304, header at A5
+rule "DUE_11_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(11.276);
+end
+
+// rule values at A305, header at A5
+rule "DUE_12_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(12.331);
+end
+
+// rule values at A306, header at A5
+rule "DUE_13_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 13, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(13.392);
+end
+
+// rule values at A307, header at A5
+rule "DUE_14_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 14, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(14.458);
+end
+
+// rule values at A308, header at A5
+rule "DUE_15_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 15, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(15.53);
+end
+
+// rule values at A309, header at A5
+rule "DUE_16_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 16, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(16.607);
+end
+
+// rule values at A310, header at A5
+rule "DUE_17_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 17, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(17.689);
+end
+
+// rule values at A311, header at A5
+rule "DUE_18_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 18, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(18.776);
+end
+
+// rule values at A312, header at A5
+rule "DUE_19_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 19, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(19.869);
+end
+
+// rule values at A313, header at A5
+rule "DUE_20_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 20, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(20.967);
+end
+
+// rule values at A314, header at A5
+rule "DUE_21_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 21, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(22.07);
+end
+
+// rule values at A315, header at A5
+rule "DUE_22_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 22, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(23.179);
+end
+
+// rule values at A316, header at A5
+rule "DUE_23_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 23, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(24.294);
+end
+
+// rule values at A317, header at A5
+rule "DUE_24_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 24, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(25.414);
+end
+
+// rule values at A318, header at A5
+rule "DUE_25_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 25, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(26.539);
+end
+
+// rule values at A319, header at A5
+rule "DUE_26_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 26, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(27.67);
+end
+
+// rule values at A320, header at A5
+rule "DUE_27_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 27, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(28.807);
+end
+
+// rule values at A321, header at A5
+rule "DUE_28_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 28, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(29.949);
+end
+
+// rule values at A322, header at A5
+rule "DUE_29_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 29, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(31.097);
+end
+
+// rule values at A323, header at A5
+rule "DUE_30_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 30, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(32.251);
+end
+
+// rule values at A324, header at A5
+rule "DUE_31_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 31, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(33.41);
+end
+
+// rule values at A325, header at A5
+rule "DUE_32_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 32, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(34.575);
+end
+
+// rule values at A326, header at A5
+rule "DUE_33_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 33, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(35.746);
+end
+
+// rule values at A327, header at A5
+rule "DUE_34_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 34, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(36.922);
+end
+
+// rule values at A328, header at A5
+rule "DUE_35_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 35, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(38.105);
+end
+
+// rule values at A329, header at A5
+rule "DUE_36_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 36, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(39.293);
+end
+
+// rule values at A330, header at A5
+rule "DUE_37_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 37, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(40.487);
+end
+
+// rule values at A331, header at A5
+rule "DUE_38_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 38, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(41.687);
+end
+
+// rule values at A332, header at A5
+rule "DUE_39_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 39, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(42.893);
+end
+
+// rule values at A333, header at A5
+rule "DUE_40_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 40, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(44.104);
+end
+
+// rule values at A334, header at A5
+rule "DUE_41_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 41, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(45.322);
+end
+
+// rule values at A335, header at A5
+rule "DUE_42_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 42, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(46.546);
+end
+
+// rule values at A336, header at A5
+rule "DUE_43_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 43, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(47.776);
+end
+
+// rule values at A337, header at A5
+rule "DUE_44_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 44, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(49.012);
+end
+
+// rule values at A338, header at A5
+rule "DUE_45_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 45, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(50.254);
+end
+
+// rule values at A339, header at A5
+rule "DUE_46_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 46, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(51.502);
+end
+
+// rule values at A340, header at A5
+rule "DUE_47_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 47, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(52.757);
+end
+
+// rule values at A341, header at A5
+rule "DUE_48_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 48, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(54.017);
+end
+
+// rule values at A342, header at A5
+rule "DUE_49_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 49, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(55.284);
+end
+
+// rule values at A343, header at A5
+rule "DUE_50_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 50, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(56.557);
+end
+
+// rule values at A344, header at A5
+rule "DUE_51_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 51, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(57.836);
+end
+
+// rule values at A345, header at A5
+rule "DUE_52_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 52, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(59.122);
+end
+
+// rule values at A346, header at A5
+rule "DUE_53_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 53, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(60.414);
+end
+
+// rule values at A347, header at A5
+rule "DUE_54_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 54, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(61.712);
+end
+
+// rule values at A348, header at A5
+rule "DUE_55_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 55, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(63.017);
+end
+
+// rule values at A349, header at A5
+rule "DUE_56_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 56, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(64.328);
+end
+
+// rule values at A350, header at A5
+rule "DUE_57_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 57, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(65.646);
+end
+
+// rule values at A351, header at A5
+rule "DUE_58_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 58, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(66.97);
+end
+
+// rule values at A352, header at A5
+rule "DUE_59_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 59, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(68.301);
+end
+
+// rule values at A353, header at A5
+rule "DUE_60_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 60, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(69.638);
+end
+
+// rule values at A354, header at A5
+rule "DUE_61_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 61, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(70.982);
+end
+
+// rule values at A355, header at A5
+rule "DUE_62_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 62, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(72.333);
+end
+
+// rule values at A356, header at A5
+rule "DUE_63_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 63, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(73.69);
+end
+
+// rule values at A357, header at A5
+rule "DUE_64_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 64, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(75.054);
+end
+
+// rule values at A358, header at A5
+rule "DUE_65_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 65, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(76.424);
+end
+
+// rule values at A359, header at A5
+rule "DUE_66_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 66, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(77.802);
+end
+
+// rule values at A360, header at A5
+rule "DUE_67_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 67, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(79.186);
+end
+
+// rule values at A361, header at A5
+rule "DUE_68_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 68, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(80.577);
+end
+
+// rule values at A362, header at A5
+rule "DUE_69_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 69, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(81.975);
+end
+
+// rule values at A363, header at A5
+rule "DUE_70_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 70, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(83.38);
+end
+
+// rule values at A364, header at A5
+rule "DUE_71_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 71, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(84.792);
+end
+
+// rule values at A365, header at A5
+rule "DUE_72_MODE_1_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 72, $revrates.roi== 6, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(86.211);
+end
+
+// rule values at A366, header at A5
+rule "DUE_1_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A367, header at A5
+rule "DUE_2_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(2.015);
+end
+
+// rule values at A368, header at A5
+rule "DUE_3_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(3.045);
+end
+
+// rule values at A369, header at A5
+rule "DUE_4_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(4.09);
+end
+
+// rule values at A370, header at A5
+rule "DUE_5_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(5.151);
+end
+
+// rule values at A371, header at A5
+rule "DUE_6_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(6.228);
+end
+
+// rule values at A372, header at A5
+rule "DUE_7_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(7.321);
+end
+
+// rule values at A373, header at A5
+rule "DUE_8_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(8.43);
+end
+
+// rule values at A374, header at A5
+rule "DUE_9_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(9.555);
+end
+
+// rule values at A375, header at A5
+rule "DUE_10_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(10.697);
+end
+
+// rule values at A376, header at A5
+rule "DUE_11_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(11.857);
+end
+
+// rule values at A377, header at A5
+rule "DUE_12_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(13.033);
+end
+
+// rule values at A378, header at A5
+rule "DUE_13_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 13, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(14.227);
+end
+
+// rule values at A379, header at A5
+rule "DUE_14_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 14, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(15.439);
+end
+
+// rule values at A380, header at A5
+rule "DUE_15_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 15, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(16.669);
+end
+
+// rule values at A381, header at A5
+rule "DUE_16_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 16, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(17.917);
+end
+
+// rule values at A382, header at A5
+rule "DUE_17_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 17, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(19.184);
+end
+
+// rule values at A383, header at A5
+rule "DUE_18_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 18, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(20.469);
+end
+
+// rule values at A384, header at A5
+rule "DUE_19_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 19, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(21.774);
+end
+
+// rule values at A385, header at A5
+rule "DUE_20_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 20, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(23.098);
+end
+
+// rule values at A386, header at A5
+rule "DUE_22_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 22, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(25.806);
+end
+
+// rule values at A387, header at A5
+rule "DUE_23_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 23, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(27.191);
+end
+
+// rule values at A388, header at A5
+rule "DUE_24_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 24, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(28.595);
+end
+
+// rule values at A389, header at A5
+rule "DUE_1_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A390, header at A5
+rule "DUE_2_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(2.03);
+end
+
+// rule values at A391, header at A5
+rule "DUE_3_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(3.091);
+end
+
+// rule values at A392, header at A5
+rule "DUE_4_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(4.184);
+end
+
+// rule values at A393, header at A5
+rule "DUE_5_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(5.309);
+end
+
+// rule values at A394, header at A5
+rule "DUE_6_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(6.468);
+end
+
+// rule values at A395, header at A5
+rule "DUE_7_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(7.662);
+end
+
+// rule values at A396, header at A5
+rule "DUE_8_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(8.892);
+end
+
+// rule values at A397, header at A5
+rule "DUE_9_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(10.159);
+end
+
+// rule values at A398, header at A5
+rule "DUE_10_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(11.464);
+end
+
+// rule values at A399, header at A5
+rule "DUE_11_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(12.808);
+end
+
+// rule values at A400, header at A5
+rule "DUE_12_MODE_6_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 6, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(14.192);
+end
+
+// rule values at A401, header at A5
+rule "DUE_1_MODE_12_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 6, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A402, header at A5
+rule "DUE_2_MODE_12_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 6, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(2.061);
+end
+
+// rule values at A403, header at A5
+rule "DUE_3_MODE_12_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 6, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(3.186);
+end
+
+// rule values at A404, header at A5
+rule "DUE_4_MODE_12_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 6, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(4.38);
+end
+
+// rule values at A405, header at A5
+rule "DUE_5_MODE_12_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 6, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(5.647);
+end
+
+// rule values at A406, header at A5
+rule "DUE_6_MODE_12_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 6, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(6.991);
+end
+
+// rule values at A407, header at A5
+rule "DUE_21_MODE_3_6"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 21, $revrates.roi== 6, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(24.442);
+end
+
+// rule values at A408, header at A5
+rule "DUE_1_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A409, header at A5
+rule "DUE_2_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(2.00776);
+end
+
+// rule values at A410, header at A5
+rule "DUE_3_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(3.02335);
+end
+
+// rule values at A411, header at A5
+rule "DUE_4_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(4.04683);
+end
+
+// rule values at A412, header at A5
+rule "DUE_5_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(5.07825);
+end
+
+// rule values at A413, header at A5
+rule "DUE_6_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(6.11768);
+end
+
+// rule values at A414, header at A5
+rule "DUE_7_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(7.16518);
+end
+
+// rule values at A415, header at A5
+rule "DUE_8_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(8.22081);
+end
+
+// rule values at A416, header at A5
+rule "DUE_9_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(9.28464);
+end
+
+// rule values at A417, header at A5
+rule "DUE_10_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(10.35673);
+end
+
+// rule values at A418, header at A5
+rule "DUE_11_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(11.43714);
+end
+
+// rule values at A419, header at A5
+rule "DUE_12_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(12.52595);
+end
+
+// rule values at A420, header at A5
+rule "DUE_13_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 13, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(13.6232);
+end
+
+// rule values at A421, header at A5
+rule "DUE_14_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 14, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(14.72898);
+end
+
+// rule values at A422, header at A5
+rule "DUE_15_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 15, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(15.84334);
+end
+
+// rule values at A423, header at A5
+rule "DUE_16_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 16, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(16.96635);
+end
+
+// rule values at A424, header at A5
+rule "DUE_17_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 17, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(18.09809);
+end
+
+// rule values at A425, header at A5
+rule "DUE_18_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 18, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(19.23861);
+end
+
+// rule values at A426, header at A5
+rule "DUE_19_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 19, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(20.38798);
+end
+
+// rule values at A427, header at A5
+rule "DUE_20_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 20, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(21.54628);
+end
+
+// rule values at A428, header at A5
+rule "DUE_21_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 21, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(22.71358);
+end
+
+// rule values at A429, header at A5
+rule "DUE_22_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 22, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(23.88993);
+end
+
+// rule values at A430, header at A5
+rule "DUE_23_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 23, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(25.07542);
+end
+
+// rule values at A431, header at A5
+rule "DUE_24_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 24, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(26.27012);
+end
+
+// rule values at A432, header at A5
+rule "DUE_25_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 25, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(27.47409);
+end
+
+// rule values at A433, header at A5
+rule "DUE_26_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 26, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(28.68741);
+end
+
+// rule values at A434, header at A5
+rule "DUE_27_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 27, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(29.91015);
+end
+
+// rule values at A435, header at A5
+rule "DUE_28_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 28, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(31.14238);
+end
+
+// rule values at A436, header at A5
+rule "DUE_29_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 29, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(32.38419);
+end
+
+// rule values at A437, header at A5
+rule "DUE_30_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 30, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(33.63563);
+end
+
+// rule values at A438, header at A5
+rule "DUE_31_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 31, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(34.89679);
+end
+
+// rule values at A439, header at A5
+rule "DUE_32_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 32, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(36.16774);
+end
+
+// rule values at A440, header at A5
+rule "DUE_33_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 33, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(37.44856);
+end
+
+// rule values at A441, header at A5
+rule "DUE_34_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 34, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(38.73933);
+end
+
+// rule values at A442, header at A5
+rule "DUE_35_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 35, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(40.04011);
+end
+
+// rule values at A443, header at A5
+rule "DUE_36_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 36, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(41.351);
+end
+
+// rule values at A444, header at A5
+rule "DUE_37_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 37, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(42.67207);
+end
+
+// rule values at A445, header at A5
+rule "DUE_38_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 38, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(44.00339);
+end
+
+// rule values at A446, header at A5
+rule "DUE_39_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 39, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(45.34505);
+end
+
+// rule values at A447, header at A5
+rule "DUE_40_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 40, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(46.69712);
+end
+
+// rule values at A448, header at A5
+rule "DUE_41_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 41, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(48.0597);
+end
+
+// rule values at A449, header at A5
+rule "DUE_42_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 42, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(49.43285);
+end
+
+// rule values at A450, header at A5
+rule "DUE_43_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 43, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(50.81667);
+end
+
+// rule values at A451, header at A5
+rule "DUE_44_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 44, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(52.21123);
+end
+
+// rule values at A452, header at A5
+rule "DUE_45_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 45, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(53.61661);
+end
+
+// rule values at A453, header at A5
+rule "DUE_46_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 46, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(55.03291);
+end
+
+// rule values at A454, header at A5
+rule "DUE_47_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 47, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(56.460210000000004);
+end
+
+// rule values at A455, header at A5
+rule "DUE_48_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 48, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(57.89859);
+end
+
+// rule values at A456, header at A5
+rule "DUE_49_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 49, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(59.34814);
+end
+
+// rule values at A457, header at A5
+rule "DUE_50_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 50, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(60.80894);
+end
+
+// rule values at A458, header at A5
+rule "DUE_51_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 51, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(62.28108);
+end
+
+// rule values at A459, header at A5
+rule "DUE_52_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 52, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(63.76466);
+end
+
+// rule values at A460, header at A5
+rule "DUE_53_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 53, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(65.25975);
+end
+
+// rule values at A461, header at A5
+rule "DUE_54_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 54, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(66.76645);
+end
+
+// rule values at A462, header at A5
+rule "DUE_55_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 55, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(68.28485);
+end
+
+// rule values at A463, header at A5
+rule "DUE_56_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 56, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(69.81504);
+end
+
+// rule values at A464, header at A5
+rule "DUE_57_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 57, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(71.35711);
+end
+
+// rule values at A465, header at A5
+rule "DUE_58_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 58, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(72.91116);
+end
+
+// rule values at A466, header at A5
+rule "DUE_59_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 59, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(74.47727);
+end
+
+// rule values at A467, header at A5
+rule "DUE_60_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 60, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(76.05554);
+end
+
+// rule values at A468, header at A5
+rule "DUE_61_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 61, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(77.64606);
+end
+
+// rule values at A469, header at A5
+rule "DUE_62_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 62, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(79.24893);
+end
+
+// rule values at A470, header at A5
+rule "DUE_63_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 63, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(80.86425);
+end
+
+// rule values at A471, header at A5
+rule "DUE_64_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 64, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(82.49211);
+end
+
+// rule values at A472, header at A5
+rule "DUE_65_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 65, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(84.13262);
+end
+
+// rule values at A473, header at A5
+rule "DUE_66_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 66, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(85.78585);
+end
+
+// rule values at A474, header at A5
+rule "DUE_67_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 67, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(87.45193);
+end
+
+// rule values at A475, header at A5
+rule "DUE_68_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 68, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(89.13094);
+end
+
+// rule values at A476, header at A5
+rule "DUE_69_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 69, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(90.82298);
+end
+
+// rule values at A477, header at A5
+rule "DUE_70_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 70, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(92.52817);
+end
+
+// rule values at A478, header at A5
+rule "DUE_71_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 71, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(94.24659);
+end
+
+// rule values at A479, header at A5
+rule "DUE_72_MODE_1_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 72, $revrates.roi== 9.5, $revrates.pymtMode== 1)
+	then
+		$revrates.setFactor(95.97836);
+end
+
+// rule values at A480, header at A5
+rule "DUE_1_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A481, header at A5
+rule "DUE_2_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(2.02347);
+end
+
+// rule values at A482, header at A5
+rule "DUE_3_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(3.07097);
+end
+
+// rule values at A483, header at A5
+rule "DUE_4_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(4.14306);
+end
+
+// rule values at A484, header at A5
+rule "DUE_5_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(5.24032);
+end
+
+// rule values at A485, header at A5
+rule "DUE_6_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(6.36333);
+end
+
+// rule values at A486, header at A5
+rule "DUE_7_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(7.51271);
+end
+
+// rule values at A487, header at A5
+rule "DUE_8_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(8.689070000000001);
+end
+
+// rule values at A488, header at A5
+rule "DUE_9_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(9.89304);
+end
+
+// rule values at A489, header at A5
+rule "DUE_10_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(11.12527);
+end
+
+// rule values at A490, header at A5
+rule "DUE_11_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(12.38643);
+end
+
+// rule values at A491, header at A5
+rule "DUE_12_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(13.6772);
+end
+
+// rule values at A492, header at A5
+rule "DUE_13_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 13, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(14.99826);
+end
+
+// rule values at A493, header at A5
+rule "DUE_14_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 14, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(16.35034);
+end
+
+// rule values at A494, header at A5
+rule "DUE_15_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 15, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(17.73415);
+end
+
+// rule values at A495, header at A5
+rule "DUE_16_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 16, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(19.15045);
+end
+
+// rule values at A496, header at A5
+rule "DUE_17_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 17, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(20.6);
+end
+
+// rule values at A497, header at A5
+rule "DUE_18_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 18, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(22.08357);
+end
+
+// rule values at A498, header at A5
+rule "DUE_19_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 19, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(23.60198);
+end
+
+// rule values at A499, header at A5
+rule "DUE_20_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 20, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(25.15602);
+end
+
+// rule values at A500, header at A5
+rule "DUE_21_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 21, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(26.74654);
+end
+
+// rule values at A501, header at A5
+rule "DUE_22_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 22, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(28.3744);
+end
+
+// rule values at A502, header at A5
+rule "DUE_23_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 23, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(30.04048);
+end
+
+// rule values at A503, header at A5
+rule "DUE_24_MODE_3_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 24, $revrates.roi== 9.5, $revrates.pymtMode== 3)
+	then
+		$revrates.setFactor(31.74566);
+end
+
+// rule values at A504, header at A5
+rule "DUE_1_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A505, header at A5
+rule "DUE_2_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(2.0475);
+end
+
+// rule values at A506, header at A5
+rule "DUE_3_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(3.1447599999999998);
+end
+
+// rule values at A507, header at A5
+rule "DUE_4_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(4.29413);
+end
+
+// rule values at A508, header at A5
+rule "DUE_5_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(5.4981);
+end
+
+// rule values at A509, header at A5
+rule "DUE_6_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(6.75926);
+end
+
+// rule values at A510, header at A5
+rule "DUE_7_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 7, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(8.08033);
+end
+
+// rule values at A511, header at A5
+rule "DUE_8_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 8, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(9.46414);
+end
+
+// rule values at A512, header at A5
+rule "DUE_9_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 9, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(10.91369);
+end
+
+// rule values at A513, header at A5
+rule "DUE_10_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 10, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(12.43209);
+end
+
+// rule values at A514, header at A5
+rule "DUE_11_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 11, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(14.02262);
+end
+
+// rule values at A515, header at A5
+rule "DUE_12_MODE_6_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 12, $revrates.roi== 9.5, $revrates.pymtMode== 6)
+	then
+		$revrates.setFactor(15.68869);
+end
+
+// rule values at A516, header at A5
+rule "DUE_1_MODE_12_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 1, $revrates.roi== 9.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(1);
+end
+
+// rule values at A517, header at A5
+rule "DUE_2_MODE_12_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 2, $revrates.roi== 9.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(2.09726);
+end
+
+// rule values at A518, header at A5
+rule "DUE_3_MODE_12_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 3, $revrates.roi== 9.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(3.30123);
+end
+
+// rule values at A519, header at A5
+rule "DUE_4_MODE_12_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 4, $revrates.roi== 9.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(4.62229);
+end
+
+// rule values at A520, header at A5
+rule "DUE_5_MODE_12_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 5, $revrates.roi== 9.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(6.07184);
+end
+
+// rule values at A521, header at A5
+rule "DUE_6_MODE_12_9.5"
+	ruleflow-group "get-revival-rates"
+when
+		$revrates:RevivalRates($revrates.noOfDues == 6, $revrates.roi== 9.5, $revrates.pymtMode== 12)
+	then
+		$revrates.setFactor(7.66236);
+end
+
+rule "call2"
+ ruleflow-group "get-revival-rates"
+when
+
+then
+    kcontext.getKnowledgeRuntime().getAgenda().getAgendaGroup("get-revival-rates").clear();
+    drools.setFocus("calculation-revival-late-fee");
+end

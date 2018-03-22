@@ -1,0 +1,94 @@
+package lic.premium_calculations;
+
+import com.lic.insurance.bff.model.policy.BonusInfoRq;
+import com.lic.insurance.bff.model.policy.BonusInfo;
+import com.ipe.bonus.process.single.*;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
+import java.text.SimpleDateFormat;
+
+rule "calculate bonus"
+	when 
+		bonusInfoRq:BonusInfoRq()
+		bonusInfo:BonusInfo()
+then 
+//Thread.sleep(30000);
+try{
+    //System.out.println("Calculating Bonus");
+    long monthsBetween = 0;
+    
+    if(null!=bonusInfoRq.getDateOfCommencement()){
+    SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+		    Date parsedDate = formatter.parse(bonusInfoRq.getDateOfCommencement());
+//System.out.println("parsedDate :: ::"+parsedDate);
+		     Instant commenceDateIns = parsedDate.toInstant();
+         ZonedDateTime commenceDateZone = commenceDateIns.atZone(ZoneId.systemDefault());
+         LocalDate commenceDateLocal = commenceDateZone.toLocalDate();
+         
+         LocalDate currentDate = LocalDate.now();
+         
+         monthsBetween = ChronoUnit.MONTHS.between(commenceDateLocal, currentDate);
+         
+         //System.out.println("Calculating Bonus monthsBetween DOC and current date"+monthsBetween);
+         //(monthsBetween<36 && bonusInfoRq.getPlan() != 112) || 
+    }
+         
+    if(bonusInfoRq.getPlan() == 97 ||bonusInfoRq.getPlan() == 147 || bonusInfoRq.getPlan()== 805 || bonusInfoRq.getPlan()== 806){
+        //System.out.println("For Plans 97, 147, 805, 806  where Bonus value will not be displayed ");
+        bonusInfo.setMessageCode("BONUSNOTELIGPLANS");
+    }else if(bonusInfoRq.getPolicyStatus() != 21 && bonusInfoRq.getPolicyStatus() != 31 && bonusInfoRq.getPolicyStatus() !=32 && bonusInfoRq.getPolicyStatus() !=33 ){
+        //System.out.println("When Bonus is not eligible/displayed due to Status (Policy not having a status 21,31,32,33 ");
+        bonusInfo.setMessageCode("BONUSNOTELIGPOLSTAT");
+    }else if((bonusInfoRq.getPlan() == 112 && monthsBetween < 12 )){
+        bonusInfo.setMessageCode("BONUSNOTELIGDURATION");
+    }else{
+        String strClaimType = "SUR";
+		
+		String strPaymentType = "";
+		if(bonusInfoRq.getPolicyStatus() ==21 ||bonusInfoRq.getPolicyStatus() == 32 ||bonusInfoRq.getPolicyStatus() ==33 ){
+			strPaymentType = "FS";
+		}else if(bonusInfoRq.getPolicyStatus() == 31){
+			strPaymentType ="PD";
+		}else{
+			strPaymentType = "NA";
+		}
+		
+		bonusInfoRq.setClaimType(strClaimType);
+		bonusInfoRq.setPaymentType(strPaymentType);
+		
+       BonusCalculation bcal = new BonusCalculation();
+        //System.out.println("calling method CalculateBonus");
+       boolean calculateBonus = bcal.CalculateBonus(bonusInfoRq.getClaimType(), bonusInfoRq.getPaymentType(), bonusInfoRq.getPlan(), bonusInfoRq.getDateOfCommencement(), bonusInfoRq.getFirstUnpaidPremiumDate(), bonusInfoRq.getSumAssured() , bonusInfoRq.getNotionalCashOption(),bonusInfoRq.getPremiumPayingTerm(),bonusInfoRq.getPolicyTerm(),
+		bonusInfoRq.getPaymentMode(), bonusInfoRq.getInstalmentPremium(), bonusInfoRq.getAgeAtEntry(), bonusInfoRq.getAnnuityMode(), bonusInfoRq.getCalcdate(), bonusInfoRq.getDateOfBirth(), bonusInfoRq.getNoBonusYears(), bonusInfoRq.getTotalPremiumPaid(), bonusInfoRq.getAccumTerm());
+					
+		bonusInfo.setTotalRevBonus(bcal.getTotalRevBonus());
+		bonusInfo.setTotalInterimBonus(bcal.getTotalInterimBonus());
+		bonusInfo.setTotalFAB(bcal.getTotalFAB());
+		bonusInfo.setTotalGuaranty(bcal.getTotalGuaranty());
+		bonusInfo.setTotalLoyalty(bcal.getTotalLoyalty());
+	bcal=null;
+	//System.out.println("bcal.getTotalRevBonus():"+bcal.getTotalRevBonus());
+    //	System.out.println("bcal.getTotalInterimBonus():"+bcal.getTotalInterimBonus());
+	//System.out.println("bcal.getTotalFAB():"+bcal.getTotalFAB());
+	//System.out.println("bcal.getTotalGuaranty():"+bcal.getTotalGuaranty());
+	//System.out.println("bcal.getTotalLoyalty():"+bcal.getTotalLoyalty());
+	
+    }
+    
+    
+    
+	
+}catch(Exception e){
+    e.printStackTrace();
+}
+					
+			
+			
+end
+

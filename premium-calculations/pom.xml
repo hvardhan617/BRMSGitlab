@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>LIC</groupId>
+  <artifactId>premium-calculations</artifactId>
+  <version>${version}</version>
+  <packaging>kjar</packaging>
+  <name>premium-calculations</name>
+   <description>premium-calculations for customer portal</description>
+   
+  <dependencies>
+  <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.5.4</version>
+</dependency>
+  
+    <dependency>
+      <groupId>com.lic.insurance</groupId>
+      <artifactId>BRMSModel</artifactId>
+      <version>09022018</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.lic.insurance</groupId>
+      <artifactId>IPE</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.lic.insurance</groupId>
+      <artifactId>IIE</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.lic.insurance</groupId>
+      <artifactId>CF</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.lic.insurance</groupId>
+      <artifactId>BonusInfoIMGE</artifactId>
+      <version>1.0</version>
+      <scope>compile</scope>
+    </dependency>
+	<dependency>
+	<groupId>org.kie</groupId>
+      <artifactId>kie-api</artifactId>
+      <version>6.4.0.Final-redhat-8</version>
+      <scope>provided</scope>
+	  </dependency>
+  </dependencies>
+  
+  
+<repositories>
+	 <repository>
+      <id>redhat</id>
+      <url>https://maven.repository.redhat.com/ga/</url>
+    </repository>
+  </repositories>
+  
+  
+  
+  
+  <pluginRepositories>
+        <pluginRepository>
+            <id>brms.plugin</id>
+            <name>red hat  Repository</name>
+            <url>https://maven.repository.redhat.com/ga/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </pluginRepository>
+    </pluginRepositories>
+  
+  
+  
+<distributionManagement>
+  <repository>
+    <id>BRMS_RULES</id>
+    <url>http://10.240.5.61:8081/nexus/content/repositories/BRMS_RULES</url>
+  </repository>
+</distributionManagement>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.kie</groupId>
+        <artifactId>kie-maven-plugin</artifactId>
+        <version>6.4.0.Final-redhat-8</version>
+        <extensions>true</extensions>
+      </plugin>
+    </plugins>
+  </build>
+</project>

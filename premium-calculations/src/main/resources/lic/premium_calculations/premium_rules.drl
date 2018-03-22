@@ -1,0 +1,112 @@
+package lic.licpremiumrules;
+
+import com.lic.insurance.bff.model.policy.Policy;
+import java.math.BigDecimal;
+import java.time.temporal.ChronoUnit;
+import java.util.Date;
+import java.time.Instant;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
+import java.time.temporal.ChronoUnit;
+   
+
+    function BigDecimal getMinRateOfInterest(BigDecimal premium,BigDecimal rateOfInterest,BigDecimal minRateOfInterest){
+
+        
+        BigDecimal claculatedRateOfInterest = premium.multiply(rateOfInterest);
+        int res=0;
+        
+        res = claculatedRateOfInterest.compareTo(minRateOfInterest);
+        if(res>=0){
+            return claculatedRateOfInterest;
+        }
+        else{
+            return minRateOfInterest;
+        }
+        
+    }
+    
+    function BigDecimal calculateROI(Date commenceDate,BigDecimal premium){
+
+       BigDecimal roi = new BigDecimal(0.0);
+       LocalDate initialRiskDate = LocalDate.of(1972, 9, 15); 
+      
+      Instant commenceDateIns = commenceDate.toInstant();
+      ZonedDateTime commenceDateZone = commenceDateIns.atZone(ZoneId.systemDefault());
+      LocalDate commenceDateLocal = commenceDateZone.toLocalDate();
+      
+      LocalDate secondRiskDate = LocalDate.of(1987, 01, 01); 
+     
+        if(commenceDateLocal.isBefore(initialRiskDate)){
+            roi = getMinRateOfInterest(premium,new BigDecimal(0.06),new BigDecimal(0.50));
+        }else if(commenceDateLocal.isBefore(secondRiskDate)){
+            roi = getMinRateOfInterest(premium,new BigDecimal(0.075),new BigDecimal(1.0));
+        }else{
+            roi = getMinRateOfInterest(premium,new BigDecimal(0.095),new BigDecimal(5.0));
+        }
+        return roi;
+    }
+    
+    function BigDecimal calculateServiceTax(Date commenceDate){
+         Instant commenceDateIns = commenceDate.toInstant();
+         ZonedDateTime commenceDateZone = commenceDateIns.atZone(ZoneId.systemDefault());
+         LocalDate commenceDateLocal = commenceDateZone.toLocalDate();
+         
+         LocalDate currentDate = LocalDate.now();
+         
+         long monthsBetween = ChronoUnit.MONTHS.between(commenceDateLocal, currentDate);
+         
+         if(monthsBetween>12){
+             return new BigDecimal(1.875);
+         }else{
+              return new BigDecimal(3.75);
+         }
+    }
+    
+
+    
+    rule "Is Policy Eligible"
+  
+	when
+		$policy:Policy(paymentEligDuration <= 6)
+	then
+	
+		$policy.setEligible(true);
+    end
+    
+    
+    rule "Is Late Fee Required Rule"
+  
+	when
+		$policy  :  Policy(paymentEligDuration >= 1 && (mode == "1" || mode == "3"|| mode == "6"|| mode == "12"))
+		
+	then
+	      
+		$policy.setLateFeeRequired(true);
+    end
+    
+    
+    rule "Calculation of Service Tax"
+  
+	when
+		$policy  :  Policy()
+		
+	then
+		$policy.setServiceTax(calculateServiceTax($policy.getCommenceDate()));
+    end
+    
+    rule "Late Fee Rate of Interest Calculation Rule"
+
+	when
+		$pol  :  Policy($pol.mode == "1"|| $pol.mode == "3"|| $pol.mode == "6"|| $pol.mode == "12")
+		
+	then
+	    BigDecimal roi = calculateROI($pol.getCommenceDate(),$pol.getPremium());
+	    $pol.setRoi(roi);
+    end
+    
+    
+    
+    
