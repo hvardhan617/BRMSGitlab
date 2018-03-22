@@ -8,7 +8,9 @@
   <packaging>kjar</packaging>
   <name>premium-calculations</name>
    <description>premium-calculations for customer portal</description>
-   
+   <properties>
+		<project.version>${version}</project.version>
+</properties>
   <dependencies>
   <!-- https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-databind -->
 <dependency>
