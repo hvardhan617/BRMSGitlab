@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>LIC</groupId>
   <artifactId>premium-calculations</artifactId>
-  <version>${project.version}</version>
+ <version>${version}</version>
   <packaging>kjar</packaging>
   <name>premium-calculations</name>
    <description>premium-calculations for customer portal</description>
@@ -22,7 +22,7 @@
     <dependency>
       <groupId>com.lic.insurance</groupId>
       <artifactId>BRMSModel</artifactId>
-      <version>09022018</version>
+      <version>30032018</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
