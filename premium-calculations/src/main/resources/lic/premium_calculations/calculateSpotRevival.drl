@@ -97,5 +97,3 @@ then
 spotRevivalRq=calculateSpotRevival(spotRevivalRq);
 	  
 end
-
-
