@@ -106,7 +106,3 @@ import java.time.temporal.ChronoUnit;
 	    BigDecimal roi = calculateROI($pol.getCommenceDate(),$pol.getPremium());
 	    $pol.setRoi(roi);
     end
-    
-    
-    
-    
