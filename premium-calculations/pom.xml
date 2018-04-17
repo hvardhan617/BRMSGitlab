@@ -81,12 +81,12 @@
   
   
   
-<distributionManagement>
+<!--<distributionManagement>
   <repository>
     <id>BRMS_RULES</id>
     <url>http://10.240.5.61:8081/nexus/content/repositories/BRMS_RULES</url>
   </repository>
-</distributionManagement>
+</distributionManagement>-->
   <build>
     <plugins>
       <plugin>
