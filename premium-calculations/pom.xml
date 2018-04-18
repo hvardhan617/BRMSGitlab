@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>LIC</groupId>
   <artifactId>premium-calculations</artifactId>
- <version>1.0</version>
+<version>${version}</version>
   <packaging>kjar</packaging>
   <name>premium-calculations</name>
    <description>premium-calculations for customer portal</description>
@@ -81,12 +81,12 @@
   
   
   
-<!--<distributionManagement>
+<distributionManagement>
   <repository>
     <id>BRMS_RULES</id>
     <url>http://10.240.5.61:8081/nexus/content/repositories/BRMS_RULES</url>
   </repository>
-</distributionManagement>-->
+</distributionManagement>
   <build>
     <plugins>
       <plugin>
